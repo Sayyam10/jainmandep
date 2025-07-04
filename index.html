@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jain Mandep - Premium Wedding & Event Decorators</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link:hover {
+            color: #b8860b;
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-gray-800">
+                        <span class="text-amber-600">Jain</span> Mandep
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-800 hover:text-amber-700 transition">Home</a>
+                    <a href="#about" class="nav-link text-gray-800 hover:text-amber-700 transition">About</a>
+                    <a href="#services" class="nav-link text-gray-800 hover:text-amber-700 transition">Services</a>
+                    <a href="#gallery" class="nav-link text-gray-800 hover:text-amber-700 transition">Gallery</a>
+                    <a href="#testimonials" class="nav-link text-gray-800 hover:text-amber-700 transition">Testimonials</a>
+                    <a href="#contact" class="nav-link text-gray-800 hover:text-amber-700 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700 focus:outline-none" aria-label="Open navigation menu">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-white pb-4 shadow-lg">
+            <div class="px-4 pt-2 space-y-2">
+                <a href="#home" class="block py-2 text-gray-800 hover:text-amber-700 transition">Home</a>
+                <a href="#about" class="block py-2 text-gray-800 hover:text-amber-700 transition">About</a>
+                <a href="#services" class="block py-2 text-gray-800 hover:text-amber-700 transition">Services</a>
+                <a href="#gallery" class="block py-2 text-gray-800 hover:text-amber-700 transition">Gallery</a>
+                <a href="#testimonials" class="block py-2 text-gray-800 hover:text-amber-700 transition">Testimonials</a>
+                <a href="#contact" class="block py-2 text-gray-800 hover:text-amber-700 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20">
+        <div class="relative h-screen">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/51d47265-8495-48ec-b78a-ad13513a8036.png" alt="Elegant wedding mandap with golden accents and flower decorations under soft lighting" class="w-full h-full object-cover">
+            <div class="hero-overlay absolute inset-0 flex items-center justify-center">
+                <div class="text-center px-4">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Creating Magical Moments</h1>
+                    <p class="text-xl text-gray-100 mb-8 max-w-3xl mx-auto">Premium wedding decoration and event styling services for your special occasions. From intimate weddings to grand political functions.</p>
+                    <div class="space-x-4">
+                        <a href="#contact" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-md font-medium transition">Get In Touch</a>
+                        <a href="#gallery" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-gray-800 transition">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Jain Mandep</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4e62aa78-40df-423b-a2c3-e27d8cf63cee.png" alt="Team preparing an event setup with flowers, fabrics and decorations" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Who We Are</h3>
+                    <p class="text-gray-600 mb-6">Founded with a passion for creating unforgettable experiences, Jain Mandep has been transforming events into spectacular celebrations for over 15 years. We specialize in Jain wedding mandap decorations and high-profile government functions.</p>
+                    <p class="text-gray-600 mb-6">Our team combines traditional aesthetics with contemporary design to create spaces that tell your unique story. From intimate family gatherings to grand political events, we handle every detail with precision and care.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="text-amber-600 mt-1 mr-3">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <p class="text-gray-600">1500+ successful events decorated</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-amber-600 mt-1 mr-3">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <p class="text-gray-600">Official decorator for Chief Minister functions</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-amber-600 mt-1 mr-3">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <p class="text-gray-600">Environmentally conscious practices</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">We offer comprehensive decoration solutions tailored to your event's theme and requirements.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-lg transition duration-300">
+                    <div class="text-amber-600 mb-4 text-4xl">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Jain Wedding Mandep</h3>
+                    <p class="text-gray-600">Traditional Jain wedding mandeps designed according to religious customs, incorporating modern aesthetics while maintaining sanctity.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-lg transition duration-300">
+                    <div class="text-amber-600 mb-4 text-4xl">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Political Functions</h3>
+                    <p class="text-gray-600">Decor for government functions, political rallies, and ministerial events with appropriate grandeur and message communication.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-lg transition duration-300">
+                    <div class="text-amber-600 mb-4 text-4xl">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Reception Decor</h3>
+                    <p class="text-gray-600">Elegant reception setups with thematic decoration, lighting solutions, and seating arrangements.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-8 rounded-lg transition duration-300">
+                    <div class="text-amber-600 mb-4 text-4xl">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Stage & Backdrop</h3>
+                    <p class="text-gray-600">Custom-designed stages and backdrops for weddings and official functions that complement your event's purpose.</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card bg-white p-8 rounded-lg transition duration-300">
+                    <div class="text-amber-600 mb-4 text-4xl">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Lighting Solutions</h3>
+                    <p class="text-gray-600">Professional lighting arrangements that enhance the decor and create the perfect ambiance for your event.</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card bg-white p-8 rounded-lg transition duration-300">
+                    <div class="text-amber-600 mb-4 text-4xl">
+                        <i class="fas fa-chair"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Seating & Lounge</h3>
+                    <p class="text-gray-600">Luxurious seating arrangements and lounge areas designed for comfort and style at your event.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Gallery</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Browse our portfolio of stunning event decorations.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9dd084eb-fc53-4b5a-9c27-09511064f443.png" alt="Traditional golden Jain mandep with marigold flower garlands and intricate patterns" class="w-full h-auto transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4 transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                            <h3 class="text-xl font-bold">Traditional Jain Mandep</h3>
+                            <p class="text-sm mt-2">Gold and white theme with fresh flowers</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/08e7749e-d56c-4e52-8930-8b2f77524e67.png" alt="Chief minister stage setup with national flags, floral arrangements and red carpet" class="w-full h-auto transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4 transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                            <h3 class="text-xl font-bold">Chief Minister Function</h3>
+                            <p class="text-sm mt-2">Dignified decor for official events</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/57150df7-32fe-478c-a6c7-78c08dc55cbf.png" alt="Modern wedding reception with crystal chandeliers and pastel floral centerpieces" class="w-full h-auto transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4 transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                            <h3 class="text-xl font-bold">Modern Reception</h3>
+                            <p class="text-sm mt-2">Contemporary elegance</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f4e4fd9d-a3fa-4541-8a9f-e69842118393.png" alt="Outdoor wedding setup with draped fabric ceilings and fairy lights" class="w-full h-auto transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4 transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                            <h3 class="text-xl font-bold">Outdoor Wedding Setup</h3>
+                            <p class="text-sm mt-2">Romantic evening decor</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d0135f92-587c-4d25-9f0b-7b0d760540cd.png" alt="Political rally stage with large banners, podium with microphones and floral decorations" class="w-full h-auto transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4 transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                            <h3 class="text-xl font-bold">Political Rally</h3>
+                            <p class="text-sm mt-2">Functional yet dignified setup</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4bf7333e-9c7e-4ec3-b8a2-9af9dd524a3d.png" alt="Close-up of mandap details showing intricate carvings and golden embellishments" class="w-full h-auto transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="text-white text-center p-4 transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                            <h3 class="text-xl font-bold">Intricate Detailing</h3>
+                            <p class="text-sm mt-2">Handcrafted elements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Hear from our satisfied clients about their experience.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/91cdc0ce-9f4f-402b-9701-b053add63332.png" alt="Middle-aged man with glasses" class="h-12 w-12 rounded-full">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold text-gray-800">Rajesh Mehta</h4>
+                            <p class="text-gray-600">Wedding Client</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"Jain Mandap created the most beautiful Jain wedding mandap for my daughter's wedding. They understood our religious requirements and combined them with stunning aesthetics. Every guest was in awe!"</p>
+                    <div class="text-amber-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b00cc627-b3f0-413c-84b4-7fcdae806e5c.png" alt="Serious looking official in formal attire" class="h-12 w-12 rounded-full">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold text-gray-800">Govind Sharma</h4>
+                            <p class="text-gray-600">Government Official</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"For our Chief Minister's public address ceremony, Jain Mandep created an impressive yet dignified setup that perfectly conveyed the importance of the occasion. Their attention to protocol was impeccable."</p>
+                    <div class="text-amber-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex-shrink-0">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dda7acc5-4045-44e7-a9b6-93fa3e7fbbc1.png" alt="Elegant woman in traditional attire" class="h-12 w-12 rounded-full">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-lg font-semibold text-gray-800">Priya Jain</h4>
+                            <p class="text-gray-600">Wedding Client</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"Our reception decor by Jain Mandep was breathtaking! They transformed the banquet hall into a floral paradise that matched our vision perfectly. Their team worked tirelessly to ensure every detail was perfect."</p>
+                    <div class="text-amber-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+                <div class="w-24 h-1 bg-amber-600 mx-auto"></div>
+                <p class="text-gray-600 mt-6 max-w-2xl mx-auto">Contact us to discuss your event decoration requirements.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Our Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="text-amber-600 mt-1 mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800">Address</h4>
+                                <p class="text-gray-600"> 5C7P+W2C, Modi Nagar, Palanpur, Gujarat 385001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-amber-600 mt-1 mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800">Phone</h4>
+                                <p class="text-gray-600">+91 98765 43210 (Office)<br>+91 94265 21139 (Mobile)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-amber-600 mt-1 mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800">Email</h4>
+                                <p class="text-gray-600">info@jainmandep.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="text-amber-600 mt-1 mr-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800">Working Hours</h4>
+                                <p class="text-gray-600">Monday - Saturday: 9:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    </div>
+                </div>
+              
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Jain Mandep</h3>
+                    <p class="text-gray-300 mb-4">Creating unforgettable event experiences with exquisite decorations.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-amber-400 transition" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-amber-400 transition" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-amber-400 transition" title="Instagram">
+                            <i class= <link rel="stylesheet" href="https://www.instagram.com/rajubhai7656?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="></i>
+                        </a>
+                    
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-amber-400 transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-amber-400 transition">About Us</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-amber-400 transition">Services</a></li>
+                        <li><a href="#gallery" class="text-gray-300 hover:text-amber-400 transition">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-amber-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-amber-400 transition">Wedding Mandap</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-amber-400 transition">Political Functions</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-amber-400 transition">Reception Decor</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-amber-400 transition">Stage Design</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-amber-400 transition">Lighting Solutions</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-300 text-sm">&copy; 20000 Jain Mandep. All rights reserved.</p>
+                    <div class="flex space-x-4 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-300 hover:text-amber-400 transition text-sm">Privacy Policy</a>
+                        <a href="#" class="text-gray-300 hover:text-amber-400 transition text-sm">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        
+    </script>
+</body>
+</html>
